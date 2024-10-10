@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="409dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Consultar"
+                        android:textSize="22sp"
+                        android:typeface="normal" />
+
+                    <EditText
+                        android:id="@+id/tvNoFactura"
+                        android:layout_width="279dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="150dp"
+                        android:ems="10"
+                        android:hint="Ingrese el numero de factura"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/tvDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="150dp"
+                        android:ems="10"
+                        android:fontFamily="serif-monospace"
+                        android:hint="Descripcion"
+                        android:inputType="text"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/tvFecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="150dp"
+                        android:ems="10"
+                        android:fontFamily="serif-monospace"
+                        android:hint="Fecha"
+                        android:inputType="text"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtsimbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="15dp"
+                        android:text="$"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/tvMonto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="150dp"
+                        android:ems="10"
+                        android:fontFamily="serif-monospace"
+                        android:hint="Monto"
+                        android:inputType="number"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtTgasto"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:hint="Tipo de gasto"
+                        android:textSize="20sp"
+                        android:typeface="monospace" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtTCompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Tipo de compra"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/chkPrimeraNecesidad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:fontFamily="serif"
+                                android:text="Hogar primera necesidad"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chkSalud"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="serif"
+                                android:text="Salud"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/chkSegundaNecesidad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:fontFamily="serif"
+                                android:text="Hogas segunda necesidad"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chkHobby"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="serif"
+                                android:text="Hobby"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/chkPrestamo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:fontFamily="serif"
+                                android:text="Prestamo"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/chkOsio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="serif"
+                                android:text="Osio"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txvMdePAgo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="Manera de pago"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rbEfectivo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Efectivo" />
+
+                        <RadioButton
+                            android:id="@+id/rbTarjetaCredito"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tarjeta de credito" />
+
+                        <RadioButton
+                            android:id="@+id/rbTarjetaDebito"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tarjeta de debito" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnConsultar"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp"
+                        android:onClick="Consulta"
+                        android:text="CONSULTAR"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btnModificar"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp"
+                        android:onClick="Modificar"
+                        android:text="MODIFICAR"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btnElinimar"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="30dp"
+                        android:onClick="Borrar"
+                        android:text="Eliminar"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
