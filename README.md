@@ -10,4 +10,4 @@ and thus have quick access to all your expenses.
 
 ## Screenshot
 
-<img src="https://github.com/user-attachments/assets/109f888c-cd48-417d-93ae-a54e64ce0220" alt="Imagen1" width="200">
+<img src="https://github.com/user-attachments/assets/109f888c-cd48-417d-93ae-a54e64ce0220" alt="Imagen1" width="400">
